@@ -1,9 +1,9 @@
 def count_integers():
-    a = float(input("Введіть число a: "))
-    b = float(input("Введіть число b: "))
-    c = float(input("Введіть число c: "))
+    a = int(input("Введіть число a: "))
+    b = int(input("Введіть число b: "))
+    c = int(input("Введіть число c: "))
 
-    count = sum(num.is_integer() for num in [a, b, c])
+    count = sum(isinstance(num, int) for num in [a, b, c])
 
     print("Кількість цілих чисел:", count)
 

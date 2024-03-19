@@ -1,17 +1,16 @@
-def replace_numbers():
-    x = float(input("Введіть число x: "))
-    y = float(input("Введіть число y: "))
+def replace_integers():
+    a = int(input("Введіть число a: "))
+    b = int(input("Введіть число b: "))
 
-    if x != y:
-        smaller = min(x, y)
-        larger = max(x, y)
-        x = (smaller + larger) / 2
-        y = 2 * smaller * larger
+    if a != b:
+        replacement = max(a, b)
+        a = replacement
+        b = replacement
     else:
-        x = y = 0
+        a = b = 0
 
     print("Замінені значення:")
-    print("x =", x)
-    print("y =", y)
+    print("a =", a)
+    print("b =", b)
 
-replace_numbers()
+replace_integers()
